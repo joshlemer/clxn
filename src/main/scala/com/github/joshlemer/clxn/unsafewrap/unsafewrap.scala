@@ -248,46 +248,4 @@ package object unsafewrap {
     override def get(key: K): Option[V] = is.get(key)
     override def iterator: Iterator[(K, V)] = is.iterator
   }
-
-//  new collection.SeqMap[Int, Int] {
-//
-//
-//    override def get(key: Int): Option[Int] = ???
-//
-//    override def iterator: Iterator[(Int, Int)] = ???
-//  }
-
-  new collection.Map[Int, String] {
-    override def -(key: Int): collection.Map[Int, String] = this
-
-    override def -(key1: Int, key2: Int, keys: Int*): collection.Map[Int, String] = this
-
-    override def get(key: Int): Option[String] = null
-
-    override def iterator: Iterator[(Int, String)] = ???
-  }
-  new Map[Int, Int] {
-    override def removed(key: Int): Map[Int, Int] = ???
-
-    override def updated[V1 >: Int](key: Int, value: V1): Map[Int, V1] = ???
-
-    override def get(key: Int): Option[Int] = ???
-
-    override def iterator: Iterator[(Int, Int)] = ???
-  }
-
-  new SeqMap[Int, String] {
-    override def removed(key: Int): SeqMap[Int, String] = ???
-    override def updated[V1 >: String](key: Int, value: V1): SeqMap[Int, V1] = ???
-    override def get(key: Int): Option[String] = ???
-    override def iterator: Iterator[(Int, String)] = Iterator(1 -> "hi")
-  }
-
-  new collection.mutable.SeqMap[Int, String] {
-    override def subtractOne(elem: Int): this.type = ???
-    override def get(key: Int): Option[String] = ???
-    override def iterator: Iterator[(Int, String)] = Iterator(1 -> "hi")
-    override def addOne(elem: (Int, String)): this.type = ???
-  }
-
 }

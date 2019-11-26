@@ -186,7 +186,7 @@ class UnsafeWrapSpec {
 
   }
   @Test
-  def dMapUnsafeWrap(): Unit = {
+  def MapUnsafeWrap(): Unit = {
 
     import com.github.joshlemer.clxn.unsafewrap._
     def runTestCase[K, V](input: collection.Map[K, V]): Unit = {

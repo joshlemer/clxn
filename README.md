@@ -24,7 +24,8 @@ val seq1: Seq[Int] = Seq.unsafeWrap(mutable.ArrayBuffer(1,2,3))
 // also works for collections of unknown mutability, or even immutable collections
 val seq2: Seq[Int] = Seq.unsafeWrap(List(1,2,3) : collection.Seq[Int]) 
 
-// if the collection passed for wrapping is already immutable, no wrapping is applied. The passed collection is returned
+// if the collection passed for wrapping is already immutable, no wrapping is applied. 
+// the passed collection is returned
 val seq3: Seq[Int] = Seq.unsafeWrap(List(1,2,3)) // List(1,2,3)
 
 

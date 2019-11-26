@@ -1,6 +1,6 @@
 # Clxn (pronounced "collection")
 
-Clxn is a library that contains extra functionality for the Scala Standard Library Collections. 
+Clxn is a library that contains extra functionality for the Scala Standard Library Collections. Currently, the only module available is the unsafewrap module, described below. 
 
 
 # Features

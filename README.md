@@ -1,5 +1,12 @@
 # Clxn (pronounced "collection")
 
+Import in SBT:
+```scala
+
+libraryDependencies ++= Seq(
+  "default" % "clxn_2.13" % "0.1.0" // temporary coordinates, moving to jcenter shortly
+)
+```
 Clxn is a library that contains extra functionality for the Scala Standard Library Collections. Currently, the only module available is the unsafewrap module, described below. 
 
 

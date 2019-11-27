@@ -1,4 +1,4 @@
-# Clxn (pronounced "collection")
+# clxn (pronounced "collection")
 
 Import in SBT:
 ```scala
